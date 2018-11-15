@@ -57,20 +57,11 @@ class Bot extends Component {
     }
     scrollToEnd = () => {
         let contentEle = content.current
-        console.log(contentEle)
         if (contentEle) {
             contentEle.scrollTop = contentEle.scrollHeight
         }
     }
-    componentDidUpdate() {
-        // if (this.state.shouldScrollToEnd) {
-        //     setTimeout(() => {
-        //         this.scrollToEnd()
-        //     }, 100);
-        // }
-    }
     render() {
-        console.log(this.state)
         return (
             <div className='container' >
                 <div className='header'><img src={require('./assets/header.png')} alt='' width='100%' /></div>
@@ -85,7 +76,6 @@ class Bot extends Component {
 
 let scrollToEnd = () => {
     let contentEle = content.current
-    console.log(contentEle)
     if (contentEle) {
         contentEle.scrollTop = contentEle.scrollHeight
     }
