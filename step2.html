@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <script src="./js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <img src="./assets/demo-伯乐端-职位列表.png" alt="职位列表" usemap="#Map" width="100%">
+    <div class="banner_wrapper">
+      <img src="./assets/伯乐端-banner.png" class="banner" />
+    </div>
+    <div class="tab-wrapper" >
+      <img src="./assets/demo-伯乐端-tab.png" alt="" class="tab" usemap="#tabMap"/>
+    </div>
+  </div>
+  <map name="Map" id="Map">
+    <area alt="详情页" title="" href="./step3.html" shape="poly" coords="8,1584,8,1955,1485,1955,1488,1584" />
+    <!-- <area alt="store" title="store" href="./store.html" coords="437,5450,707,5645" shape="rect" /> -->
+  </map>
+  <map name="tabMap" id="tabMap">
+    <area alt="详情页" title="" href="./step2.html" coords="50,9,323,198" shape="rect">
+    <area alt="" title="" href="./store.html" coords="449,9,671,196" shape="rect">
+  </map>
+</body>
+<script>
+  window.onload = function() {
+    imageMapResize();;
+    // let bannerElm = document.querySelector('.banner_wrapper')
+    // let scrolled = false
+    // bannerElm.addEventListener("scroll", function(e) {
+    //   scrolled = true
+    // })
+    // window.addEventListener("touchend", function(e) {
+    //   if (scrolled) {
+    //     scrolled = true
+    //     let imgCount = 3
+    //     let {
+    //       scrollWidth,
+    //       scrollLeft,
+    //       clientWidth
+    //     } = bannerElm
+    //     let widthOfOne = scrollWidth / 3
+    //     bannerElm.scrollLeft = Math.round(scrollLeft / widthOfOne) * widthOfOne
+    //   }
+    // })
+  }
+</script>
+
+</html>

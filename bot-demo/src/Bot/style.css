@@ -1,0 +1,21 @@
+.container {
+    text-align: center;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.content{
+    height:100%;
+    padding-bottom:30vw;
+    overflow: scroll;
+}
+.content>img{
+    width: 100%;
+}
+.footer{
+    background:white;
+    width: 100%;
+    position: absolute;
+    bottom:0;
+}

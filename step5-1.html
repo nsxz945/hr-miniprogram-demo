@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <script src="./js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <img src="./assets/候选人端-职位详情.png" alt="新职位通知" usemap="#Map" width="100%">
+    </div>
+        <map name="Map" id="Map">
+        <area alt="后退" title="" href="./step4.html" shape="poly" coords="0,0,162,0,157,167,3,167" />
+        <area href="./bot.html"alt="confirm" title="confirm" coords="751,1341,1314,1553" shape="rect">
+        <area href="./step5.html" alt="cancel" title="cancel" coords="191,1342,747,1552" shape="rect">
+    </map>
+</body>
+<script>
+    window.onload = function () {
+        imageMapResize();
+        
+    }
+</script>
+
+</html>

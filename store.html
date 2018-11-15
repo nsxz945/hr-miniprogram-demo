@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <script src="./js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <img src="./assets/demo-伯乐端-积分商城.png" alt="新职位通知" usemap="#Map" width="100%">
+    <div class="tab-wrapper">
+      <img src="./assets/demo-伯乐端-store-tab.png" alt="" class="tab" usemap="#tabMap" />
+    </div>
+  </div>
+  <map name="Map" id="Map">
+    <!-- <area alt="后退" href="./step2.html" shape="poly" coords="0,0,162,0,157,167,3,167" /> -->
+    <area alt="内推职位" title="内推职位" href="./step2.html" coords="2,2391,360,2584" shape="rect">
+  </map>
+  <map name="tabMap" id="tabMap">
+    <area alt="详情页" title="" href="./step2.html" coords="50,9,323,198" shape="rect">
+    <area alt="" title="" href="./store.html" coords="449,9,671,196" shape="rect">
+  </map>
+</body>
+<script>
+  window.onload = function() {
+    imageMapResize();
+
+  }
+</script>
+
+</html>

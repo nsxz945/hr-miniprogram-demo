@@ -1,0 +1,35 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.banner_wrapper{
+    position: absolute;
+    top: 58vw;
+    left: 0;
+    width: 100%;
+    overflow: scroll;
+    background: #F5F5F8;
+}
+.banner {
+    position: relative;
+    top: 1vw;
+    width: 260vw;
+}
+
+.tab-wrapper{
+    position: fixed;
+    bottom:0px;
+    left: 0;
+    width: 100%;
+    background: #F5F5F8;
+}
+.tab-wrapper img{
+    width: 100%;
+}
